@@ -96,14 +96,14 @@ namespace pr14.Pags
 
             switch (cbSorting.SelectedIndex)
             {
-                case 0:
-                    {
-                        services.Sort((x, y) => x.Cost.CompareTo(y.Cost));
-                    }
-                    break;
                 case 1:
                     {
-                        services.Sort((x, y) => x.Cost.CompareTo(y.Cost));
+                        services.Sort((x, y) => x.CurrentPrice.CompareTo(y.CurrentPrice));
+                    }
+                    break;
+                case 2:
+                    {
+                        services.Sort((x, y) => x.CurrentPrice.CompareTo(y.CurrentPrice));
                         services.Reverse();
                     }
                     break;

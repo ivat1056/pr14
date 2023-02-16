@@ -1,5 +1,6 @@
 ﻿using pr14.classs;
 using pr14.Pags;
+using pr14.WINDOWS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,10 +29,36 @@ namespace pr14
         {
 
             InitializeComponent();
-            Base.DB = new Entities();
+            Base.DB = new Entities2();
             ClassFrame.frame = fMain;
             Admin = false;
             ClassFrame.frame.Navigate(new Servislist(Admin));
+        }
+
+       
+
+        private void tbLoginAdmin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (Admin == false)
+            {
+                Admin loginAdminWindow = new Admin();
+                loginAdminWindow.ShowDialog();
+                if (Admin == true)
+                {
+                   // tbLoginAdmin.Style = (Style)tbLoginAdmin.FindResource("tbLoginAdminDelete");
+                    ClassFrame.frame.Navigate(new Servislist(Admin));
+                }
+            }
+            else
+            {
+                if (MessageBox.Show("Вы уверены что хотите выйти из режима администратора?", "Системное сообщение", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                {
+                    Admin = false;
+                    tbLoginAdmin.Style = (Style)tbLoginAdmin.FindResource("tbLoginAdmin");
+                    MessageBox.Show("Режим администратора выключен");
+                    ClassFrame.frame.Navigate(new Servislist(Admin));
+                }
+            }
         }
     }
 }

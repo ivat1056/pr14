@@ -8,6 +8,6 @@ namespace pr14.classs
 {
     internal class Base
     {
-        public static Entities DB;
+        public static Entities2 DB;
     }
 }

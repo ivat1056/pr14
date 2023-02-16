@@ -168,7 +168,7 @@ namespace pr14.Pags
         private void btnDeleteImage_Click(object sender, RoutedEventArgs e)
         {
             path = null;
-            imMainImagePath.Source = new BitmapImage(new Uri("..\\resources\\picture.png", UriKind.Relative));
+            imMainImagePath.Source = new BitmapImage(new Uri("..\\image\\picture.png", UriKind.Relative));
             btnAddImage.Content = "Добавить картинку";
             btnDeleteImage.Visibility = Visibility.Hidden;
         }
