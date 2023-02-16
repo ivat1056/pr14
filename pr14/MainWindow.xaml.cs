@@ -1,6 +1,9 @@
-﻿using System;
+﻿using pr14.classs;
+using pr14.Pags;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +23,15 @@ namespace pr14
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static bool Admin;
         public MainWindow()
         {
+
             InitializeComponent();
+            Base.DB = new Entities();
+            ClassFrame.frame = fMain;
+            Admin = false;
+            ClassFrame.frame.Navigate(new Servislist(Admin));
         }
     }
 }
