@@ -29,7 +29,7 @@ namespace pr14.Pags
         {
             InitializeComponent();
             path = null;
-            imMainImagePath.Source = new BitmapImage(new Uri("..\\resources\\picture.png", UriKind.Relative));
+            imMainImagePath.Source = new BitmapImage(new Uri("..\\image\\picture.png", UriKind.Relative));
         }
 
         public AddService(Service service) 
