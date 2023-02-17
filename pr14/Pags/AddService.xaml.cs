@@ -56,7 +56,7 @@ namespace pr14.Pags
             else
             {
                 path = null;
-                imMainImagePath.Source = new BitmapImage(new Uri("..\\resources\\picture.png", UriKind.Relative));
+                imMainImagePath.Source = new BitmapImage(new Uri("..\\image\\picture.png", UriKind.Relative));
             }
         }
 
