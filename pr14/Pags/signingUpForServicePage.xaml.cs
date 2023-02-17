@@ -126,7 +126,7 @@ namespace pr14.Pags
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            ClassFrame.frame.Navigate(new Servislist(true));
         }
     }
 }
