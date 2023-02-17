@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pr14.classs
+namespace pr14
 {
     /// <summary>
     /// частичный класс 
     /// </summary>
     public partial class Client
     {
-        public string FIO 
+        public string FIO
         {
             get
             {
@@ -19,8 +19,6 @@ namespace pr14.classs
             }
         }
 
-        public string LastName { get; private set; }
-        public string FirstName { get; private set; }
-        public string Patronymic { get; private set; }
+
     }
 }

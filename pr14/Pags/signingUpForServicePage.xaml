@@ -40,7 +40,7 @@
             </StackPanel>
         </StackPanel>
         <Grid Grid.Row="2">
-            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200" Style="{StaticResource btnstyle1}" Margin="20, 0, 0, 0"  HorizontalAlignment="Left"/>
+            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200" Style="{StaticResource btnstyle1}" Margin="20, 0, 0, 0"  Click="btnBack_Click"  HorizontalAlignment="Left"/>
             <Button x:Name="btnAdd" Content="Добавить запись" Height="50" Style="{StaticResource btnstyle1}" Width="300" Margin="0, 0, 20, 0" Click="btnAdd_Click" HorizontalAlignment="Center"/>
         </Grid>
     </Grid>

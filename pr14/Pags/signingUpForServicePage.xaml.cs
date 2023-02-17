@@ -123,5 +123,10 @@ namespace pr14.Pags
         {
             showDateAndTime();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
