@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr14.WINDOWS"
         mc:Ignorable="d"
-        Title="Admin" Height="450" Width="800">
+        Title="Admin" Height="300" Width="450">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -21,8 +21,8 @@
             <TextBox x:Name="tbKodAdmin" Width="400" Margin="10" MaxLength="50" TextAlignment="Center"/>
         </StackPanel>
         <Grid Grid.Row="2">
-            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200"  HorizontalAlignment="Left" Click="btnBack_Click" Cursor="Hand"/>
-            <Button x:Name="btnSave" Content="Войти" Height="50" Width="200"  HorizontalAlignment="Right" Click="btnSave_Click"/>
+            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200" Style="{StaticResource btnstyle1}" HorizontalAlignment="Left" Click="btnBack_Click" Cursor="Hand"/>
+            <Button x:Name="btnSave" Content="Войти" Height="50" Width="200" Style="{StaticResource btnstyle1}" HorizontalAlignment="Right" Click="btnSave_Click"/>
         </Grid>
     </Grid>
 </Window>

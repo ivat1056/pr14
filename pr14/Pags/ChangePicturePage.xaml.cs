@@ -47,7 +47,7 @@ namespace pr14.Pags
                 }
                 else
                 {
-                    MessageBox.Show("Такая картинка уже есть! Добавлено старое фото");
+                    MessageBox.Show("Такая картинка уже есть!");
                 }
                 ServicePhoto servicePhoto = new ServicePhoto();
                 servicePhoto.ServiceID = service.ID;

@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="classs\Base.cs" />
     <Compile Include="classs\ClassFrame.cs" />
+    <Compile Include="classs\Clients.cs" />
     <Compile Include="classs\PartialService.cs" />
     <Compile Include="Client.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -102,6 +103,9 @@
     </Compile>
     <Compile Include="Pags\ChangePicturePage.xaml.cs">
       <DependentUpon>ChangePicturePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pags\PageUPC.xaml.cs">
+      <DependentUpon>PageUPC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pags\Servislist.xaml.cs">
       <DependentUpon>Servislist.xaml</DependentUpon>
@@ -147,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pags\ChangePicturePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pags\PageUPC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

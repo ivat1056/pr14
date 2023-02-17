@@ -79,10 +79,10 @@
                                 </StackPanel>
                                 <TextBlock x:Name="tbDiscount" Uid="{Binding Discount}" Text="{Binding Discount, StringFormat={}*скидка {0}%}" Margin="10" Loaded="tbDiscount_Loaded"/>
                                 <StackPanel Orientation="Horizontal">
-                                    <Button x:Name="btnChangeService" Uid="{Binding ID}" Content="Редактировать" Height="50" Width="200"   Loaded="btnChangeService_Loaded" Click="btnChangeService_Click"/>
-                                    <Button x:Name="btnDeleteService" Uid="{Binding ID}" Content="Удалить" Height="50" Width="200"   Loaded="btnDeleteService_Loaded" Click="btnDeleteService_Click"/>
-                                    <Button x:Name="btnEnterService" Uid="{Binding ID}" Content="Записаться на услугу" Height="50" Width="300"   Loaded="btnEnterService_Loaded" Click="btnEnterService_Click"/>
-                                    <Button x:Name="btnChangePictures" Uid="{Binding ID}" Content="Дополнительные картинки" Height="50" Width="350"  Loaded="btnChangePictures_Loaded" Click="btnChangePictures_Click"/>
+                                    <Button x:Name="btnChangeService" Uid="{Binding ID}"  Style="{StaticResource btnstyle1}" Content="Редактировать" Height="50" Width="200"   Loaded="btnChangeService_Loaded" Click="btnChangeService_Click"/>
+                                    <Button x:Name="btnDeleteService" Uid="{Binding ID}" Style="{StaticResource btnstyle1}" Content="Удалить" Height="50" Width="200"   Loaded="btnDeleteService_Loaded" Click="btnDeleteService_Click"/>
+                                    <Button x:Name="btnEnterService" Uid="{Binding ID}" Style="{StaticResource btnstyle1}" Content="Записаться на услугу" Height="50" Width="300"   Loaded="btnEnterService_Loaded" Click="btnEnterService_Click"/>
+                                    <Button x:Name="btnChangePictures" Uid="{Binding ID}" Style="{StaticResource btnstyle1}" Content="Дополнительные картинки" Height="50" Width="350"  Loaded="btnChangePictures_Loaded" Click="btnChangePictures_Click"/>
                                 </StackPanel>
                             </StackPanel>
                         </Grid>
@@ -97,8 +97,8 @@
                 <TextBlock x:Name="tbAllCount"/>
             </StackPanel>
             <Grid Grid.Row="4">
-                <Button x:Name="btnAdd" Content="Добавить новую услугу" Height="50" Width="300" HorizontalAlignment="Center"  Margin="0" Click="btnAdd_Click"/>
-                <Button x:Name="btnUpcomingEntries" Content="Ближайшие записи" Height="50" Width="300" HorizontalAlignment="Right"  Margin="0, 0, 20, 0" Click="btnUpcomingEntries_Click" Loaded="btnUpcomingEntries_Loaded"/>
+                <Button x:Name="btnAdd" Content="Добавить новую услугу" Style="{StaticResource btnstyle1}" Height="50" Width="300" HorizontalAlignment="Center"  Margin="0" Click="btnAdd_Click"/>
+                <Button x:Name="btnUpcomingEntries" Content="Ближайшие записи" Style="{StaticResource btnstyle1}" Height="50" Width="300" HorizontalAlignment="Right"  Margin="0, 0, 20, 0" Click="btnUpcomingEntries_Click" Loaded="btnUpcomingEntries_Loaded"/>
             </Grid>
         </Grid>
     </Grid>

@@ -9,11 +9,11 @@ using System.Windows.Media;
 namespace pr14
 {
     /// <summary>
-    /// Частичный класс для таблицы Service
+    /// Класс для таблицы Service
     /// </summary>
     public partial class Service
     {
-        public float DurationInMinute // Продолжительность в минутах
+        public float DurationInMinute 
         {
             get
             {
@@ -21,7 +21,7 @@ namespace pr14
                 return time;
             }
         }
-        public double CurrentPrice // Текущая цена
+        public double CurrentPrice 
         {
             get
             {
@@ -36,7 +36,7 @@ namespace pr14
                 }
             }
         }
-        public SolidColorBrush DiscountColor // Цвет услуг со скидкой
+        public SolidColorBrush DiscountColor 
         {
             get
             {

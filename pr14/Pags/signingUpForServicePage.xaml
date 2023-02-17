@@ -20,12 +20,13 @@
             <TextBlock x:Name="tbDurationInMinute" Text="Длительность в минутах" />
             <StackPanel Margin="10">
                 <TextBlock Text="Выбирите клиента" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cbClient" Width="600"/>
+                <ComboBox Name="cbClient" Width="600">
+                </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <StackPanel >
                     <TextBlock Text="Дата" HorizontalAlignment="Center"/>
-                    <DatePicker x:Name="dpData" Width="300"/>
+                    <DatePicker x:Name="dpData" Width="300" SelectedDateChanged="dpData_SelectedDateChanged"/>
                 </StackPanel>
                 <StackPanel >
                     <TextBlock Text="Время" HorizontalAlignment="Center"/>
@@ -39,8 +40,8 @@
             </StackPanel>
         </StackPanel>
         <Grid Grid.Row="2">
-            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200" Margin="20, 0, 0, 0"  HorizontalAlignment="Left"/>
-            <Button x:Name="btnAdd" Content="Добавить запись" Height="50" Width="300" Margin="0, 0, 20, 0"  HorizontalAlignment="Center"/>
+            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200" Style="{StaticResource btnstyle1}" Margin="20, 0, 0, 0"  HorizontalAlignment="Left"/>
+            <Button x:Name="btnAdd" Content="Добавить запись" Height="50" Style="{StaticResource btnstyle1}" Width="300" Margin="0, 0, 20, 0" Click="btnAdd_Click" HorizontalAlignment="Center"/>
         </Grid>
     </Grid>
 </Page>

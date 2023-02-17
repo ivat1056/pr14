@@ -45,7 +45,6 @@ namespace pr14
                 loginAdminWindow.ShowDialog();
                 if (Admin == true)
                 {
-                   // tbLoginAdmin.Style = (Style)tbLoginAdmin.FindResource("tbLoginAdminDelete");
                     ClassFrame.frame.Navigate(new Servislist(Admin));
                 }
             }
@@ -54,7 +53,6 @@ namespace pr14
                 if (MessageBox.Show("Вы уверены что хотите выйти из режима администратора?", "Системное сообщение", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                 {
                     Admin = false;
-                    tbLoginAdmin.Style = (Style)tbLoginAdmin.FindResource("tbLoginAdmin");
                     MessageBox.Show("Режим администратора выключен");
                     ClassFrame.frame.Navigate(new Servislist(Admin));
                 }

@@ -66,7 +66,7 @@ namespace pr14.Pags
                 }
                 else
                 {
-                    MessageBox.Show("нет описания");
+                    MessageBox.Show("Нет описания");
                     tbSearchDescription.Text = "";
                 }
             }
@@ -112,7 +112,7 @@ namespace pr14.Pags
             lvListService.ItemsSource = services;
             if (services.Count == 0)
             {
-                MessageBox.Show("нет записей");
+                MessageBox.Show("Нет записей");
                 tbAllCount.Text = Base.DB.Service.ToList().Count + "/" + Base.DB.Service.ToList().Count;
                 tbSearchName.Text = "";
                 tbSearchDescription.Text = "";
@@ -181,7 +181,7 @@ namespace pr14.Pags
                 buttonDeleteService.Visibility = Visibility.Collapsed;
             }
         }
-        private bool getProverkaInfoAboutService(int index) // Проверка наличия записей на услугу клиентом
+        private bool getProverkaInfoAboutService(int index) 
         {
             foreach (ClientService clientService in Base.DB.ClientService.ToList())
             {
@@ -261,7 +261,7 @@ namespace pr14.Pags
             Button btn = (Button)sender;
             int index = Convert.ToInt32(btn.Uid);
             Service service = Base.DB.Service.FirstOrDefault(x => x.ID == index);
-            //ClassFrame.frame.Navigate(new ChangePicturePage(service));
+            ClassFrame.frame.Navigate(new ChangePicturePage(service));
         }
 
         private void btnEnterService_Click(object sender, RoutedEventArgs e)
@@ -269,12 +269,12 @@ namespace pr14.Pags
             Button btn = (Button)sender;
             int index = Convert.ToInt32(btn.Uid);
             Service service = Base.DB.Service.FirstOrDefault(x => x.ID == index);
-           // FrameClass.MainFrame.Navigate(new signingUpForServicePage(service));
+            ClassFrame.frame.Navigate(new signingUpForServicePage(service));
         }
 
         private void btnUpcomingEntries_Click(object sender, RoutedEventArgs e)
         {
-           // FrameClass.MainFrame.Navigate(new UpcomingEntriesPage());
+            ClassFrame.frame.Navigate(new PageUPC());
         }
 
         private void btnUpcomingEntries_Loaded(object sender, RoutedEventArgs e)

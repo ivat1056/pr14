@@ -42,14 +42,14 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
                 <Image x:Name="imMainImagePath" Height="200" Width="300"/>
                 <StackPanel VerticalAlignment="Center">
-                    <Button x:Name="btnAddImage" Content="Добавить картинку" Height="50" Width="300"  HorizontalAlignment="Center" Click="btnAddImage_Click"/>
-                    <Button x:Name="btnDeleteImage" Content="Удалить картинку" Height="50" Width="300"  HorizontalAlignment="Center" Click="btnDeleteImage_Click" Visibility="Hidden"/>
+                    <Button x:Name="btnAddImage" Style="{StaticResource btnstyle1}" Content="Добавить картинку" Height="50" Width="300"  HorizontalAlignment="Center" Click="btnAddImage_Click"/>
+                    <Button x:Name="btnDeleteImage" Style="{StaticResource btnstyle1}" Content="Удалить картинку" Height="50" Width="300"  HorizontalAlignment="Center" Click="btnDeleteImage_Click" Visibility="Hidden"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
         <Grid Grid.Row="3">
-            <Button x:Name="btnBack" Content="Назад" Height="50" Width="200" Margin="20, 0, 0, 0" HorizontalAlignment="Left" Click="btnBack_Click"/>
-            <Button x:Name="btnAddService" Content="Добавить услугу" Height="50" Width="300"  HorizontalAlignment="Center" Click="btnAddService_Click"/>
+            <Button x:Name="btnBack" Style="{StaticResource btnstyle1}" Content="Назад" Height="50" Width="200" Margin="20, 0, 0, 0" HorizontalAlignment="Left" Click="btnBack_Click"/>
+            <Button x:Name="btnAddService" Style="{StaticResource btnstyle1}" Content="Добавить услугу" Height="50" Width="300"  HorizontalAlignment="Center" Click="btnAddService_Click"/>
         </Grid>
     </Grid>
 </Page>
